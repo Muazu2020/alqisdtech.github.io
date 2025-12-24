@@ -1,0 +1,567 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" href="image/alqisdlogo.png">
+        <title>PORTFOLIO</title>
+        <!--font Awesome 6.5.1 css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            body {
+                background-color: #e9effb;
+                justify-content: center;/* centers horizontally */
+                align-items: center; /* centers horizontally */
+                height: 100vh;/* full viewport height */
+                padding: 0;
+                margin: 0;
+            }
+            header{
+                padding-top: auto;
+                background-size: cover;
+                width: 100%;
+                position: fixed;
+                overflow: hidden;
+                padding-bottom: 6px;
+                margin: auto;
+            }
+            .header_left{
+                line-height: 1px;
+                border-bottom: 2px solid #a1b117;
+                padding-top: 1px;
+                display:flex;
+                overflow: visible;
+                height: 40px;
+                margin: auto;
+                padding: 10px;
+                flex-direction: row;
+                background-color: #051f66;
+            }
+            .header_left img{
+                float: left;
+                min-height: 40px;
+                max-width: 40px;
+                padding: 5px;
+            }
+            .header_left h2{
+                color: rgb(249, 249, 252);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                float: left;
+                text-align: left;
+                display: block;
+                font-weight: lighter;
+                text-shadow: 3px 1px 5px rgb(10, 10, 10);
+            }
+         .header_left h3{
+                color: rgb(195, 197, 70);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                stroke-width: 3px 2px black;
+                text-align: left ;
+                font-size: 15px;
+                padding-top: 7px;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+        .header_left h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            color: rgb(15, 214, 48);
+            padding-top: 2px;
+            text-align: left;
+            font-size: 8px;
+            float: left;
+            display: grid;
+        }
+        header{
+                padding-top: auto;
+                background-size: cover;
+                width: 100%;
+                position: fixed;
+                overflow: hidden;
+                padding-bottom: 6px;
+            }
+            .topnav {
+                background-color: rgba(18, 10, 131, 0.027);
+                padding: 3px;
+                display: flex;
+                height: 30px;
+                cursor: pointer;
+                overflow:hidden;
+                justify-content: center;
+                gap: 15px;
+                margin-left: 40px;
+            }
+            .topnav a{
+               color: #f1f2f3ea;
+               font-size: 15px;
+               font-weight: lighter ;
+               padding: 10px;
+               text-decoration: none; 
+            }
+            .topnav a:hover{
+                color: #1a8d1f;
+                background-color: #bce942;
+            }
+            .topnav .active{
+                background-color: #0e7970;
+            }
+            .below-head{
+                background-image: url(image/weboffice.jpg);
+                height: 400px;
+            }
+            .below-head-head{
+                background: #051f665d;
+                height: 400px;
+                
+            }
+            .below-head-head h2{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                padding:  0;
+            }
+            .portfolio {
+                text-align: center;
+                justify-content: center;
+                color: #fff;
+                padding-top: 80px;
+                overflow: hidden;
+                background-position: center;
+            }
+            .wrapper-section{
+                padding: 60px 0;
+            }
+            .wrapper-container{
+                display: flex;
+                padding: 10px;
+                margin: auto;
+                background: white;
+                background-size: cover;
+                max-width: 70%;
+                gap: 20px;
+            }
+            .wrapper-image{
+                display: flex;
+                gap: 20px;
+            }
+            .wrapper-image img{
+                width: 230px;
+                height: 300px;
+                display: flex;
+                object-fit: cover;
+            }
+            .wrapper-content{
+                max-width: 500px;
+            }
+            .wrapper-content button{
+                background: rgb(185, 61, 23);
+                color: white;
+                padding: 12px 25px;
+                font-size: 20px;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+            }
+            .wrapper-content button:hover{
+                background-color: darkorange;
+            }
+            .wrapper-content p{
+                font-size: 10px;
+                color: #050505;
+            }
+            .wrapper-content{
+                color: #030303;
+                font-weight: bolder;
+                font-size: 17px;
+            }
+            #image-background{
+                background-color: #051f66de;
+                background-size: cover;
+                height: 150px;
+            }
+            .background{
+                background: #051f66;
+                background-size: cover;
+                height: 250px;
+                display: flex;
+                justify-content: right;
+            }
+            .background img{
+                display:flex;
+                width: 30%;
+                flex-direction: column-reverse;
+                transform: skewx(6deg);
+            }
+            .portfolio-section{
+                margin-top: -60px;
+                gap: 30px;
+                overflow: hidden;
+                margin-bottom: 30px;
+            }
+            .portfolio-image {
+                margin-top: 20px;
+                margin: auto;
+                gap: 10px;
+                display: flex;
+                grid-template-columns: repeat(2,1fr);
+                background: #fff;
+                padding: 15px;
+                width: 400px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 1);
+            }
+            .image-box img {
+                width: 100%;
+                border-radius: 5px;
+            }
+            .image-box{
+                background: rgb(255, 255, 255);
+                padding: 2px ;
+                border: 1px solid #051f66;
+                border-radius: 5%;
+            }
+            .portfolio-paragraph{
+                color: #051f66;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .portfolio-paragraph p::after{
+            content: "";
+            display: block; width: 40px; height: 3px;
+            background: #ff270a;
+            margin: 10px auto 0;
+            }
+        .end-section {
+            width: 100%;
+            justify-content: center;
+            background-color: #051f66;
+            height: 300px;
+            margin: auto;
+            padding: 20px;
+            background-image: url(image/working.jpg);
+            background-size: cover;
+        }
+        .end-box {
+            width: 70%;
+            margin: auto;
+        }
+        .end-box p{
+            color: white;
+            font-weight:bold;
+        }
+        .end-section button{
+                background: rgb(185, 61, 23);
+                color: white;
+                padding: 12px 25px;
+                font-size: 20px;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px;
+            }
+            .end-section button:hover{
+                background-color: darkorange;
+            }
+            footer {
+            position:relative ;
+            padding-top: 20px;
+            background-color: #f8f8f8;
+            
+        }
+        footer .below-items{
+            display: flex;
+            position: relative;
+            background-color: #f8f8f8;
+            border-top: 1px #03030344 solid;
+            overflow: hidden;
+            flex-direction: row; padding-top: 50px;
+            gap: 4%; padding-bottom: 20px;
+            justify-content: center;padding-left: 10px;
+
+        }
+        footer .quicklink a{
+            text-decoration: none;
+            color: #0c0c0c;
+        }
+        .footer #landing-page{
+        position: relative;
+        background-color: #fff;
+        display: inline;
+        position: relative; 
+        max-width: 70%;
+        }
+        .footer_information{
+            display: flex;
+            position: relative;
+            flex-direction: column-reverse;
+            background-color: #051f66;
+            border-radius: 5px;
+            border: none;
+            justify-content: center; align-content: center;
+            background-size: cover;
+            height:130px ;
+            width: 70%; overflow: hidden ;
+            margin: auto;  margin-bottom: 5%;
+            padding: 20px 0;
+        }
+        .form_1 {
+            display: flex;
+            align-content: center;
+            text-decoration: none;
+            color: #c5c32d; padding: 10px;
+            justify-content: center; 
+        }
+        .form  .input {
+            border-radius: 5px;
+            width: 10px;
+        }
+        .footer_information .subscribe{
+               background-color: #fff;
+               width: 250px;
+               overflow: hidden;
+               display: flex;
+               padding: 7px;
+        }
+        .form_1 button {
+            border: none; background: #a0280a;
+            border-radius: 0px; padding: 10px 5px;
+            cursor: pointer; font-weight: bold;
+            color: #fffefd; width: auto; height: max-content;
+        }
+        .form_1 button:hover{
+            background: #86a10f;
+            color: #fafafd;
+        }
+        .footer h3{
+            color: rgb(48, 5, 128); text-transform:capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .wrapper .icon{
+            align-items: center; justify-content: center;
+            position: relative;
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            background-color: #1b1b7e;
+            padding : 5px;
+            font-size: 20px;
+            width: 20px;
+            text-decoration: none;
+            margin: 3px 2px;
+            border-radius: 50%;
+            stroke: rgb(35, 6, 139);
+            margin: 10px;
+            height:20px;
+            color: rgb(242, 245, 242) ;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -055, 0.266, 1.55);
+
+        }
+        .wrapper .tooltip{
+            position: absolute;
+            top: 0;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #1648d3;
+            background-color: #ffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+        }
+        .wrapper .tooltip::before{
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background-color: #ffffff;
+            bottom: -3px;
+            left: 50px;
+            transform: translate(-50)rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 155);
+
+        }
+        .wrapper .icon:hover .tooltip{
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip{
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+        }
+        .wrapper .facebook:hover,
+        .wrapper .facebook:hover .tooltip,
+        .wrapper .facebook:hover .tooltip::before{
+            background-color: #3b5999;
+            color: #f9fbff;
+        }
+        .wrapper .twitter:hover,
+        .wrapper .twitter:hover .tooltip,
+        .wrapper .twitter:hover .tooltip::before{
+            background-color: #46c1f6;
+            color: #ffff;
+        }
+        .wrapper .instagram:hover,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip::before{
+            background-color: #e1306c;
+            color: #ffff;
+        }
+        .wrapper .github:hover,
+        .wrapper .github:hover .tooltip,
+        .wrapper .github:hover .tooltip::before{
+            background-color: #3333;
+            color: #ffff;
+        }
+        footer .contact-us button{
+            background-color: #c21f1f;
+            color: #ffff;
+            height: 40px;
+            width: 130px;
+            border: 2px solid #051f66;
+        }
+        footer .contact-us button:hover{
+            background-color: #8cb62c;
+            color: #fff;
+        }
+        .copyright{
+            background-color: #051f66;
+            height: 60px;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            color: #fff;
+        }
+    </style>
+    </head>
+    <body>
+         <header>
+            <div class="header_left">
+                <img src="image/alqisdlogo.png" alt="logo">
+        <h2>AL-QISD GRAPHICS</h2>
+        <h3>and Tech services</h3> <br>
+             <div class="topnav">
+                        <a href="alqisd.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="about.html">About</a>
+                        <a class="active" href="contact.html">Contact Us</a>
+             </div>
+            </div>
+            </header>
+            <div class="below-head">
+                <div class="below-head-head">
+                  <div class="portfolio">
+                  <h2>Our Portfolio</h2>
+                  <p>Digital Grow With</p>
+                  <h2>Al-qisd Graphics</h2>
+                </div> 
+                </div>
+                <section class="wrapper-section">
+                    <div class="wrapper-container">
+                    <div class="wrapper-image">
+                        <img src="image/weboffice2.jpg" alt="">
+                    </div>
+                <div class="wrapper-content">
+                        <h1>Discover Our Team Of <br>Web and Graphics Design Experts</h1>
+                        <p>Our dedicated team work deligently do provide quality and long lasting services <br> for better growing digital design brand dedicated to delivering visually appealing
+        and effective solutions <br> for businesses. Our team are ready to take action on your graphics design services, <br>branding, Web design, Digital content, and promotional materials. <br>
+        Our Goal is to combine creativity, <br>innovaton, and technical skills to produce designs that represent your brand perfectly. 
+        and help you grow.</p>
+        <button> Discover Team</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="image-background">
+                <div class="background">
+                    <img src="image/office.jpg" alt="">
+                </div>
+                 </div>
+            <section class="portfolio-section">
+               <div class="portfolio-image">
+                <div class="portfolio-paragraph">
+            <p>Our Portfolio</p>
+                </div>
+                  <div class="image-box">
+                    <img src="image/portfolio.jpg" alt="">
+                    <h3>Web Design</h3>
+                  </div> 
+                  <div class="image-box">
+                    <img src="image/portfolio (3).jpg" alt="">
+                    <h3>Flyer Design</h3>
+                  </div>
+                     <div class="image-box">
+                  <img src="image/portfolio (2).jpg" alt="">
+                  <h3>Flayer Design</h3>
+                  </div>
+               </div> 
+            </section>
+            
+            <section class="end-section">
+                <div class="end-box">
+                    <p>Al-qisd graphics and Tech is a growing digital design brand dedicated to delivering visually appealing
+        and effective solutions for businesses.  We specialize in graphics design, branding, Web design, Digital content, and promotional materials. <br>
+        Our Goal is to combine creativity, innovaton, and technical skills to produce designs that represent your brand perfectly 
+        and help you grow. At Al-qisd Graphics, we believe that great design should be both beautiful and meaninful.</p>
+         </p>
+                    <button> Discover More</button>
+                </div>
+            </section>
+
+            <footer>
+            
+            <div class="landing-page">
+            <div class="footer_information">
+                <div class="form_1">
+                <form action="">
+        <h3>Subscribe to Our Newsletter</h3>
+        <div class="Subscribe">
+         <input type="email" name="email" id="email" value="input your email"style="text-decoration:none">
+         <button class="button-1">SUBMIT</button>
+    </form>
+    </div>
+    </div>
+            </div>
+            <div class="below-items">
+            <div class="wrapper">
+                <h3>Al-qisdGraphics & Tech</h3>
+                <p>Transforming businesses <br>with design solutions since 2021,<br> we help companies get their services <br> without stress</p>
+                    <a href="#"class="icon facebook">
+                        <div class="tooltip">facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#"class="icon instagram">
+                        <div class="tooltip">instagram</div>
+                    <span><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="quicklink">
+                <h3>Quick Link</h3>
+                <a href="about.html">About Us</a> <br>
+                <a href="services.html">Our Services</a><br>
+                <a href="portfolio.html">portfolio</a><br>
+                <a href="contact.html">Our Team</a>
+            </div>
+            <div class="footer-services">
+       <h3>services</h3>
+       <p>Webdesign <br> Graphics Design <br> Logo Design <br>Organisation website  <br> Invitation card</p>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <button>GET IN TOUCH</button>
+        </div>        
+    </div>
+            <div class="Copyright">
+            <h5>Copyright &copy; 2025, Alqisd Tech; All right reserve</h5>
+            </div>
+        </footer>
+    </body>
+</html>

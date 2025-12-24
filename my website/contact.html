@@ -1,0 +1,562 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" href="image/alqisdlogo.png">
+        <title>PORTFOLIO</title>
+        <!--font Awesome 6.5.1 css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            body {
+                background-color: #e9effb;
+                justify-content: center;/* centers horizontally */
+                align-items: center; /* centers horizontally */
+                height: 100vh;/* full viewport height */
+                padding: 0;
+                margin: 0;
+            }
+            header{
+                padding-top: auto;
+                background-size: cover;
+                width: 100%;
+                position: fixed;
+                overflow: hidden;
+                padding-bottom: 6px;
+                margin: auto;
+            }
+            .header_left{
+                line-height: 1px;
+                border-bottom: 2px solid #a1b117;
+                padding-top: 1px;
+                display:flex;
+                overflow: visible;
+                height: 40px;
+                margin: auto;
+                padding: 10px;
+                flex-direction: row;
+                background-color: #051f66;
+            }
+            .header_left img{
+                float: left;
+                min-height: 40px;
+                max-width: 40px;
+                padding: 5px;
+            }
+            .header_left h2{
+                color: rgb(249, 249, 252);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                float: left;
+                text-align: left;
+                display: block;
+                font-weight: lighter;
+                text-shadow: 3px 1px 5px rgb(10, 10, 10);
+            }
+         .header_left h3{
+                color: rgb(195, 197, 70);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                stroke-width: 3px 2px black;
+                text-align: left ;
+                font-size: 15px;
+                padding-top: 7px;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+        .header_left h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            color: rgb(15, 214, 48);
+            padding-top: 2px;
+            text-align: left;
+            font-size: 8px;
+            float: left;
+            display: grid;
+        }
+        header{
+                padding-top: auto;
+                background-size: cover;
+                width: 100%;
+                position: fixed;
+                overflow: hidden;
+                padding-bottom: 6px;
+            }
+            .topnav {
+                background-color: rgba(18, 10, 131, 0.027);
+                padding: 3px;
+                display: flex;
+                height: 30px;
+                cursor: pointer;
+                overflow:hidden;
+                justify-content: center;
+                gap: 15px;
+                margin-left: 30px;
+            }
+            .topnav a{
+               color: #f1f2f3ea;
+               font-size: 15px;
+               font-weight: lighter ;
+               padding: 10px;
+               text-decoration: none; 
+            }
+            .topnav a:hover{
+                color: #1a8d1f;
+                background-color: #bce942;
+            }
+            .topnav .active{
+                background-color: #0e7970;
+            }
+            .specialize {
+            background-image: url('image/work.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:  0;
+            padding-top: 1px;
+            padding-bottom: auto;
+            border-bottom: 2px solid rgb(171, 180, 47);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100%-6vw));
+            
+        }
+        .specialize .second{
+            padding: 10px;
+            background-color: #051f668f;
+            color: #dddde2;
+            text-align: center;
+            padding-bottom: 20px;
+            line-height: auto;
+            padding-top: 90px;
+            align-content:center;
+        }
+        .specialize .second .h1{
+            font-weight: initial;
+            color: white;
+            text-transform: capitalize;
+            padding-top: 10px;
+        }
+        .specialize .second .h2{
+            font-family: 'Times New Roman', Times, serif;
+            color: #f2f546;
+        }
+        .specialize .second .p{
+            font-style: normal;
+            color: white;
+            font-size: 10px;
+            line-height: 2px;
+            text-transform: initial;
+        }
+        
+        .section-contact{
+            margin-top: -20px;
+        }
+        .contact-card {
+            width: 70%;
+            margin: auto; font-size: 16px;
+            display: flex;   border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+            overflow: hidden;
+            margin-top: ;
+            background: #fff;
+            height: 400px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .box{
+            box-sizing: border-box;
+            width: 40%;
+            margin: 0;
+        }
+        .left{
+            width: 45%;
+            margin-left: 10px;
+            padding: 10px;
+            overflow: hidden;
+            background: #b0c732;
+        }
+        .left h2{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: lighter;
+            color: #051f66;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .info {
+            align-items: center;
+            margin: 15px 0;
+            justify-content: center;
+        }
+        .info i {
+            background: #051f66;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        /* form */
+        .right{
+            width: 45%;
+            padding: 20px;
+            background: #fff;
+        }
+        .right h2 {
+            margin-bottom: 10px;
+            font-weight: lighter;
+            color: #051f66;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .row{
+            display: flex;
+            gap: 15px;  margin-bottom: 5px;
+        }
+        .right input, 
+        .right textarea {
+            width: 100%;  padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 25px;
+            border: 1px solid #ddd;
+        }
+         .right textarea{
+            height: 90px;
+            margin-bottom: 10px;
+         }
+        .right form button{
+            background-color: #051f66;
+            color: white;
+            padding: 12px; border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 13px;
+        }
+        .right form button:hover{
+            background-color: #c6c930;
+        }
+        
+        .map-container h3{
+            color: #051f66;
+        }
+        .map-container{
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+        .map-container iframe{
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            position:relative ;
+            padding-top: 20px;
+            background-color: #f8f8f8;
+            
+        }
+        footer .below-items{
+            display: flex;
+            position: relative;
+            background-color: #f8f8f8;
+            border-top: 1px #03030344 solid;
+            overflow: hidden;
+            flex-direction: row; padding-top: 50px;
+            gap: 4%; padding-bottom: 20px;
+            justify-content: center;padding-left: 10px;
+
+        }
+        footer .quicklink a{
+            text-decoration: none;
+            color: #0c0c0c;
+        }
+        .footer #landing-page{
+        position: relative;
+        background-color: #fff;
+        display: inline;
+        position: relative; 
+        max-width: 70%;
+        }
+        .footer_information{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            background-color: #030303;
+            border-radius: 5px;
+            border: none;
+            justify-content: center; align-content: center;
+            background-size: cover;
+            height:130px ;
+            width: 600px; overflow: hidden ;
+            margin: auto;  margin-bottom: 5%;
+        }
+        .form_1 {
+            display: flex;
+            align-content: center;
+            text-decoration: none;
+            color: #c5c32d; padding: 10px;
+            justify-content: center; 
+        }
+        .form  .input {
+            border-radius: 5px;
+            width: 10px;
+        }
+        .footer_information .subscribe{
+               background-color: #fff;
+               width: 250px;
+               overflow: hidden;
+               display: flex;
+               padding: 7px;
+        }
+        .form_1 button {
+            border: none; background: #1b0664;
+            border-radius: 5px; padding: 10px 5px;
+            cursor: pointer; font-weight: bold;
+            color: #fffefd; width: auto; height: max-content;
+        }
+        .form_1 button:hover{
+            background: #86a10f;
+            color: #fafafd;
+        }
+        .footer h3{
+            color: rgb(48, 5, 128); text-transform:capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .wrapper .icon{
+            align-items: center; justify-content: center;
+            position: relative;
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            background-color: #1b1b7e;
+            padding : 5px;
+            font-size: 20px;
+            width: 20px;
+            text-decoration: none;
+            margin: 3px 2px;
+            border-radius: 50%;
+            stroke: rgb(35, 6, 139);
+            margin: 10px;
+            height:20px;
+            color: rgb(242, 245, 242) ;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -055, 0.266, 1.55);
+
+        }
+        .wrapper .tooltip{
+            position: absolute;
+            top: 0;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #1648d3;
+            background-color: #ffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+        }
+        .wrapper .tooltip::before{
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background-color: #ffffff;
+            bottom: -3px;
+            left: 50px;
+            transform: translate(-50)rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 155);
+
+        }
+        .wrapper .icon:hover .tooltip{
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip{
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+        }
+        .wrapper .facebook:hover,
+        .wrapper .facebook:hover .tooltip,
+        .wrapper .facebook:hover .tooltip::before{
+            background-color: #3b5999;
+            color: #f9fbff;
+        }
+        .wrapper .twitter:hover,
+        .wrapper .twitter:hover .tooltip,
+        .wrapper .twitter:hover .tooltip::before{
+            background-color: #46c1f6;
+            color: #ffff;
+        }
+        .wrapper .instagram:hover,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip::before{
+            background-color: #e1306c;
+            color: #ffff;
+        }
+        .wrapper .github:hover,
+        .wrapper .github:hover .tooltip,
+        .wrapper .github:hover .tooltip::before{
+            background-color: #3333;
+            color: #ffff;
+        }
+        footer .contact-us button{
+            background-color: #030303;
+            color: #ffff;
+            height: 40px;
+            width: 130px;
+            border: 2px solid rgb(181, 211, 50) ;
+        }
+        footer .contact-us button:hover{
+            background-color: #8cb62c;
+            color: #fff;
+        }
+        .copyright{
+            background-color: #080808;
+            height: 60px;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header_left">
+                <img src="image/alqisdlogo.png" alt="logo">
+        <h2>AL-QISD GRAPHICS</h2>
+        <h3>and Tech services</h3> <br>
+             <div class="topnav">
+                        <a href="alqisd.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="about.html">About</a>
+                        <a class="active" href="contact.html">Contact Us</a>
+             </div>
+            </div>
+            </header>
+            <div class="specialize">
+         <div class="second">
+        <h2>Contact Us</h2>
+        <h1>Digital grow with <br> al-qisd tech</h1>
+        <p>We are ready to provide the right solution according to your needs.</P>
+            </div>
+            </div>
+        </header>
+        <section class="section-contact">
+            <div class="contact-card">
+                <!--left-->
+             <div class="box left">
+                 <h2>Get in touch</h2>
+                 <p>Fell free to contact us anytime</p>
+                 <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Potiskum Yobe State, Nigeria</span>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>alqisdgraphics@gmail.com</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                     <span style="font-size: 10px;">+234 806 736 3231, +234 813 415 2865</div>
+                    </div>
+                  <div class="wrapper">
+                    <a href="#"class="icon facebook">
+                        <div class="tooltip">facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#"class="icon instagram">
+                        <div class="tooltip">instagram</div>
+                    <span><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span></a>
+            </div>
+             </div>
+
+             <!--RIGHT-->
+             <div class="box right">
+                <h2>Send us message</h2>
+                 <form action="">
+                    <div class="row">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Company">
+                    </div>
+                    <div class="row">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Phone">
+                    </div>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                 </form>
+             </div>
+        </div>
+        </section>
+        <div class="map-container">
+             <h3>Our Location</h3>
+             <iframe src="https://www.google.com/maps?q=potiskum,+yobe+state,+Nigeria&output=embed"loading="lazy"referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+            
+            <div class="landing-page">
+            <div class="footer_information">
+                <div class="form_1">
+                <form action="">
+        <h3>Subscribe to Our Newsletter</h3>
+        <div class="Subscribe">
+         <input type="email" name="email" id="email" value="input your email"style="text-decoration:none">
+         <button class="button-1">SUBMIT</button>
+    </form>
+    </div>
+    </div>
+            </div>
+            <div class="below-items">
+            <div class="wrapper">
+                <h3>Al-qisdGraphics & Tech</h3>
+                <p>Transforming businesses <br>with design solutions since 2021,<br> we help companies get their services <br> without stress</p>
+                    <a href="#"class="icon facebook">
+                        <div class="tooltip">facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#"class="icon instagram">
+                        <div class="tooltip">instagram</div>
+                    <span><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="quicklink">
+                <h3>Quick Link</h3>
+                <a href="about.html">About Us</a> <br>
+                <a href="services.html">Our Services</a><br>
+                <a href="portfolio.html">portfolio</a><br>
+                <a href="contact.html">Our Team</a>
+            </div>
+            <div class="footer-services">
+       <h3>services</h3>
+       <p>Webdesign <br> Graphics Design <br> Logo Design <br>Organisation website  <br> Invitation card</p>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <button>GET IN TOUCH</button>
+        </div>        
+    </div>
+            <div class="Copyright">
+            <h5>Copyright &copy; 2025, Alqisd Tech; All right reserve</h5>
+            </div>
+        </footer>
+    </body>
+
+</html>
+    </body>
+</html> 

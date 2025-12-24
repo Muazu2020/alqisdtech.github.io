@@ -1,0 +1,594 @@
+    <html>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="icon" href="image/alqisdlogo.png">
+        <title>AL-QISD GRAPHICS AND ONLINE SERVICES</title>
+        <!--font Awesome 6.5.1 css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+        body {
+                background-color: #e9effb;
+                justify-content: center;/* centers horizontally */
+                align-items: center; /* centers horizontally */
+                height: 100vh;/* full viewport height */
+                padding: 0;
+                margin: 0;
+            }
+        .specialize {
+            background-image: url('image/working.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:  0;
+            padding-top: 1px;
+            padding-bottom: 60px;
+            border-bottom: 2px solid rgb(171, 180, 47);
+        }
+        header{
+                padding-top: auto;
+                background-size: cover;
+                width: 100%;
+                position: fixed;
+                overflow: hidden;
+                padding-bottom: 6px;
+            }
+            .topnav {
+                background-color: rgba(18, 10, 131, 0.027);
+                padding: 3px;
+                display: flex;
+                height: 30px;
+                cursor: pointer;
+                overflow:hidden;
+                justify-content: center;
+                gap: 15px;
+                margin-left: 30px;
+            }
+            .topnav a{
+               color: #f1f2f3ea;
+               font-size: 15px;
+               font-weight: lighter ;
+               padding: 10px;
+               text-decoration: none; 
+            }
+            .topnav a:hover{
+                color: #1a8d1f;
+                background-color: #bce942;
+            }
+            .topnav .active{
+                background-color: #0e7970;
+            }
+            .header_left{
+                line-height: 1px;
+                padding-top: 1px;
+                display:flex;
+                overflow: visible;
+                height: 40px;
+                margin: auto;
+                padding: 10px;
+                flex-direction: row;
+                background-color: #051f66;
+            }
+            .header_left img{
+                float: left;
+                min-height: 40px;
+                max-width: 40px;
+                padding: 5px;
+            }
+            .header_left h2{
+                color: rgb(249, 249, 252);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                float: left;
+                text-align: left;
+                display: block;
+                font-weight: lighter;
+                text-shadow: 3px 1px 5px rgb(10, 10, 10);
+            }
+         .header_left h3{
+                color: rgb(195, 197, 70);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                stroke-width: 3px 2px black;
+                text-align: left ;
+                font-size: 15px;
+                padding-top: 7px;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+        .header_left h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            color: rgb(15, 214, 48);
+            padding-top: 2px;
+            text-align: left;
+            font-size: 8px;
+            float: left;
+            display: grid;
+        }
+        .specialize .second{
+            padding: 10px;
+            color: #dddde2;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            line-height: auto;
+            padding-top: 90px;
+            align-content: flex-start;
+        }
+        .specialize .second .h1{
+            font-weight: initial;
+            color: white;
+            text-transform: capitalize;
+            padding-top: 10px;
+        }
+        .specialize .second .h3{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .specialize .second .p{
+            font-style: normal;
+            color: white;
+            font-size: 10px;
+            line-height: 2px;
+            text-transform: initial;
+        }
+        .specialize #button-1 {
+            width: 150px;
+            overflow: hidden;
+            height: 30px;
+            color: rgb(252, 249, 249);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            font-size: larger;
+            font-style: oblique;
+            border: 2px solid #fdfeff;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: #051f6600;
+        }
+        .specialize #button-2 {
+            width: 150px;
+            overflow: hidden;
+            height: 30px;
+            color: rgb(166, 180, 38);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            font-size: larger;
+            font-style: oblique;
+            border: 2px solid #0d0d0e;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: #062970;
+        }
+        .specialize #button-1:hover{
+            color: #0d0c13ee;
+            background-color: #b9e224;
+        }
+        .specialize #button-2:hover{
+            color: #0d0c13ee;
+            background-color: #b9e224;
+        }
+        /* text*/
+        .start-circle_1 h1{
+            margin: 0;
+            color: #fafbfc;
+            font-weight: bolder;
+        }
+
+        .start-circle_1 {
+         position: absolute;
+         align-content: center; top: 120px;
+         text-align: center; align-items: center;
+         width: 150px; margin-left: 60%;
+         height: 150px; background-color: #051f66;
+          background-color: rgb(36, 18, 194);
+            border-radius: 60%;
+            display:inline-block;
+            box-shadow: 0 12px 24px black;
+            animation: bounceIn 1.2s ease forwards;
+        }
+        /*bounce keyframe */
+        @keyframes bounceIn {
+           0% {
+            opacity: 0; transform: scale(0.3s);
+           }
+           50%{
+            opacity: 1; transform: scale(1.1);
+           }
+           70%{
+            transform: scale(0.95);
+           }
+           100%{
+            transform: scale(1);
+           }
+        }
+        /* text*/
+        .start-circle_2 h1{
+            margin: 0;
+            color: #fafbfc;
+            font-weight: bolder;
+        }
+        .start-circle .start-circle_2 p{
+            color: #fcfcff;
+            font-weight: lighter;
+        }
+        .start-circle_2 {
+         position: absolute;
+         float: right; padding-top: 10px;
+         line-height: 8px;
+         align-content: center; top: 170px;
+         text-align: center; align-items: center;
+         width: 100px; margin-left: 80%;
+         height: 100px; background-color: #051f66;
+          background-color: rgb(194, 24, 18);
+            border-radius: 60%;
+            display: inline;
+            box-shadow: 0 12px 24px black;
+            animation: bounceIn 2.2s ease-in-out;
+        }
+        /*bounce keyframe */
+        @keyframes bounceIn {
+           0% {
+            opacity: 0; transform: scale(0.5s);
+           }
+           50%{
+            opacity: 1; transform: scale(1.1);
+           }
+           70%{
+            transform: scale(0.97);
+           }
+           100%{
+            transform: scale(1);
+           }
+        }
+        .services{
+            display: grid;
+            background-color: #fafbfc;
+            background-size: cover;
+            overflow: hidden;
+            text-align:center ;
+            justify-content: center; padding-bottom: 15px;
+            /* center the image within the container */
+            background-position: center;/* */
+        }
+        .title{
+            text-align: center;
+            display: -ms-inline-grid;
+            position: relative;
+            overflow: hidden;
+        }
+        .title::after{
+            content: "";
+            display: block; width: 40px; height: 3px;
+            background: #0a7cff;
+            margin: 10px auto 0;
+        }
+        .our-services{
+           display: grid;
+           grid-template-columns: repeat(4,1fr);
+           gap: 25px;
+           padding: 10px;
+           padding-top: 20px;
+           transition: 0.3s;
+           background-color: #051f66;
+
+        }
+        .our-services .service-box{
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 12px;
+        }
+        .service-box i{
+            font-size: 32px;
+            background: #839423;
+            color: white;
+            padding: 18px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .service-box h3{
+            color: white;
+        }
+        .team {
+            text-align: center;
+            padding: 10px;
+        }
+        .team .title-2::after{
+            content: "";
+            display: block; width: 40px; height: 3px;
+            background: #0a7cff;
+            margin: 10px auto 0;
+        }
+        .team p{
+            font-size: 10px;
+            
+        }
+        footer {
+            position:relative ;
+            padding-top: 20px;
+            background-color: #f8f8f8;
+            
+        }
+        footer .below-items{
+            display: flex;
+            position: relative;
+            background-color: #f8f8f8;
+            border-top: 1px #03030344 solid;
+            overflow: hidden;
+            flex-direction: row; padding-top: 50px;
+            gap: 4%; padding-bottom: 20px;
+            justify-content: center;padding-left: 10px;
+
+        }
+        footer .quicklink a{
+            text-decoration: none;
+            color: #0c0c0c;
+        }
+        .footer #landing-page{
+        position: relative;
+        background-color: #fff;
+        display: inline;
+        position: relative; 
+        max-width: 70%;
+        }
+        .footer_information{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            background-color: #030303;
+            border-radius: 5px;
+            border: none;
+            justify-content: center; align-content: center;
+            background-size: cover;
+            height:130px ;
+            width: 600px; overflow: hidden ;
+            margin: auto;  margin-bottom: 5%;
+        }
+        .form_1 {
+            display: flex;
+            align-content: center;
+            text-decoration: none;
+            color: #c5c32d; padding: 10px;
+            justify-content: center; 
+        }
+        .form  .input {
+            border-radius: 5px;
+            width: 10px;
+        }
+        .footer_information .subscribe{
+               background-color: #fff;
+               width: 250px;
+               overflow: hidden;
+               display: flex;
+               padding: 7px;
+        }
+        .form_1 button {
+            border: none; background: #1b0664;
+            border-radius: 5px; padding: 10px 5px;
+            cursor: pointer; font-weight: bold;
+            color: #fffefd; width: auto; height: max-content;
+        }
+        .form_1 button:hover{
+            background: #86a10f;
+            color: #fafafd;
+        }
+        .footer h3{
+            color: rgb(48, 5, 128); text-transform:capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .wrapper .icon{
+            align-items: center; justify-content: center;
+            position: relative;
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            background-color: #1b1b7e;
+            padding : 5px;
+            font-size: 20px;
+            width: 20px;
+            text-decoration: none;
+            margin: 3px 2px;
+            border-radius: 50%;
+            stroke: rgb(35, 6, 139);
+            margin: 10px;
+            height:20px;
+            color: rgb(242, 245, 242) ;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.68, -055, 0.266, 1.55);
+
+        }
+        .wrapper .tooltip{
+            position: absolute;
+            top: 0;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #1648d3;
+            background-color: #ffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+        }
+        .wrapper .tooltip::before{
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background-color: #ffffff;
+            bottom: -3px;
+            left: 50px;
+            transform: translate(-50)rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 155);
+
+        }
+        .wrapper .icon:hover .tooltip{
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        .wrapper .icon:hover span,
+        .wrapper .icon:hover .tooltip{
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+        }
+        .wrapper .facebook:hover,
+        .wrapper .facebook:hover .tooltip,
+        .wrapper .facebook:hover .tooltip::before{
+            background-color: #3b5999;
+            color: #f9fbff;
+        }
+        .wrapper .twitter:hover,
+        .wrapper .twitter:hover .tooltip,
+        .wrapper .twitter:hover .tooltip::before{
+            background-color: #46c1f6;
+            color: #ffff;
+        }
+        .wrapper .instagram:hover,
+        .wrapper .instagram:hover .tooltip,
+        .wrapper .instagram:hover .tooltip::before{
+            background-color: #e1306c;
+            color: #ffff;
+        }
+        .wrapper .github:hover,
+        .wrapper .github:hover .tooltip,
+        .wrapper .github:hover .tooltip::before{
+            background-color: #3333;
+            color: #ffff;
+        }
+        footer .contact-us button{
+            background-color: #030303;
+            color: #ffff;
+            height: 40px;
+            width: 130px;
+            border: 2px solid rgb(181, 211, 50) ;
+        }
+        footer .contact-us button:hover{
+            background-color: #8cb62c;
+            color: #fff;
+        }
+        .copyright{
+            background-color: #080808;
+            height: 60px;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header_left">
+                <img src="image/alqisdlogo.png" alt="logo">
+        <h2>AL-QISD GRAPHICS</h2>
+        <h3>and Tech services</h3> <br>
+             <div class="topnav">
+                        <a href="alqisd.html">Home</a>
+                        <a class="active" href="services.html">Services</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact Us</a>
+             </div>
+            </div>
+        </header>
+        <div class="specialize">
+         <div class="second">
+        <h5>Wellcome to Al-qisd graphics</h5>
+        <h1>Digital grow with <br> alqisd tech</h1>
+        <p>We will help you with All kind of graphics design services <br> and web Design</P>
+        <button id="button-1"onclick="window.location.href='alqisd.html'">learn more</button>
+        <button id="button-2"onclick="window.location.href='services.html'">Our Services</button>
+        </div>
+      </div>
+        <div class="start-circle_1">
+            <h1>60%</h1>
+            <p>Off</p>
+        </div>
+         <div class="start-circle_2">
+            <h1>100%</h1>
+            <p>Time manage</p>
+        </div>
+      <div class="services">
+        <h2>Well Come to Al-qisd Graphics & Tech</h2>
+        <p>we are leaders in tech-enable digital <br>services solutions
+            We provide real time digital services solutions that meets <br>
+            Our clients needs</p>
+      </div>
+     <h3 class="title">Our Services</h3>
+     <p style="text-align: center;">We render the following services</p> 
+      <div class="our-services">
+      <div class="service-box"><i class="fa-solid fa-laptop-code"></i><h3>Web Design</h3></div>
+      <div class="service-box"><i class="fa-solid fa-pen-nib"></i> <h3>Logo Design</h3>
+      </div>
+      <div class="service-box"><i class="fa-solid fa-paintbrush"></i> <h3>Graphics Design</h3></div>
+      <div class="service-box"><i class="fa-solid fa-envelope-open-text"></i><h3>Invitation Card</h3></div>
+      <div class="service-box"><i class="fa-solid fa-print"></i><h3>Printing</h3></div>
+      <div class="service-box"><i class="fa-solid fa-headset"></i><h3>IT Support</h3></div>
+      <div class="service-box"><i class="fa-solid fa-chalkboard-user"></i><h3>Training</h3></div>
+      <div class="service-box"><i class="fa-solid fa-bullhorn"></i><h3>Branding</h3></div>
+    </div> 
+       <div class="Team">
+         <h3 class="title-2">Our Team</h3>
+         <p>Our dedicated team work deligently do provide quality and long lasting services <br> for better growing digital design brand dedicated to delivering visually appealing
+        and effective solutions <br> for businesses. Our team are ready to take action on your graphics design services, <br>branding, Web design, Digital content, and promotional materials. <br>
+        Our Goal is to combine creativity, <br>innovaton, and technical skills to produce designs that represent your brand perfectly. 
+        and help you grow.</p>
+       </div>
+
+    <footer>
+            
+            <div class="landing-page">
+            <div class="footer_information">
+                <div class="form_1">
+                <form action="">
+        <h3>Subscribe to Our Newsletter</h3>
+        <div class="Subscribe">
+         <input type="email" name="email" id="email" value="input your email"style="text-decoration:none">
+         <button class="button-1">SUBMIT</button>
+    </form>
+    </div>
+    </div>
+            </div>
+            <div class="below-items">
+            <div class="wrapper">
+                <h3>Al-qisdGraphics & Tech</h3>
+                <p>Transforming businesses <br>with design solutions since 2021,<br> we help companies get their services <br> without stress</p>
+                    <a href="#"class="icon facebook">
+                        <div class="tooltip">facebook</div>
+                        <span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#"class="icon twitter">
+                        <div class="tooltip">Twitter</div>
+                        <span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#"class="icon instagram">
+                        <div class="tooltip">instagram</div>
+                    <span><i class="fab fa-instagram"></i></span></a>
+                    <a href="#"class="icon github">
+                        <div class="tooltip">Github</div>
+                        <span><i class="fab fa-github"></i></span></a>
+            </div>
+            <div class="quicklink">
+                <h3>Quick Link</h3>
+                <a href="about.html">About Us</a> <br>
+                <a href="services.html">Our Services</a><br>
+                <a href="portfolio.html">portfolio</a><br>
+                <a href="contact.html">Our Team</a>
+            </div>
+            <div class="footer-services">
+       <h3>services</h3>
+       <p>Webdesign <br> Graphics Design <br> Logo Design <br>Organisation website  <br> Invitation card</p>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <button>GET IN TOUCH</button>
+        </div>        
+    </div>
+            <div class="Copyright">
+            <h5>Copyright &copy; 2025, Alqisd Tech; all right reserve</h5>
+            </div>
+        </footer>
+    </body>
+
+</html>
